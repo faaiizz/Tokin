@@ -9,6 +9,7 @@ body {
 body>* {
     flex-shrink: 0;
 }
+
 main {
     flex: 1;
     /* isi utama akan mengisi ruang kosong */
@@ -16,7 +17,7 @@ main {
 
 /* navbar */
 .navbar {
-   
+
 
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
@@ -29,6 +30,7 @@ main {
 .navbar .nav-link {
     margin-right: 20px;
 }
+
 /* navbar */
 
 /* hero */
@@ -51,27 +53,52 @@ main {
     color: white;
     font-weight: 700;
 }
+
 /* hero */
 
 /* games */
 .games .game img {
     width: 100%;
-   border-radius: 10px; 
+    border-radius: 10px;
 }
 
 .games .game img:hover {
     transform: scale(1.05);
-    transition: transform 0,3s ease;
+    transition: transform 0, 3s ease;
     box-shadow: 0 4px 16px rgba(40, 0, 255, 0.2);
 }
+
 /* games */
 
 /* benefits */
 .benefit .card {
-    height: 200px; 
+    height: 200px;
 }
 
 .benefit img {
     height: 200px;
 }
+
 /* benefits */
+
+/* tampilan mobile */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .games .game img {
+        margin-bottom: 15px;
+    }
+
+    .benefit .card {
+        margin-bottom: 15px;
+    }
+
+    .benefit img {
+        height: auto;
+    }
+
+}
+
+/* tampilan mobile */
