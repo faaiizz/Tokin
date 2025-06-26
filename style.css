@@ -1,0 +1,77 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body>* {
+    flex-shrink: 0;
+}
+main {
+    flex: 1;
+    /* isi utama akan mengisi ruang kosong */
+}
+
+/* navbar */
+.navbar {
+   
+
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.navbar .navbar-nav {
+    margin-left: auto;
+}
+
+.navbar .nav-link {
+    margin-right: 20px;
+}
+/* navbar */
+
+/* hero */
+.hero {
+    background-image: url(./asset/img-hero.png);
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero span {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+}
+/* hero */
+
+/* games */
+.games .game img {
+    width: 100%;
+   border-radius: 10px; 
+}
+
+.games .game img:hover {
+    transform: scale(1.05);
+    transition: transform 0,3s ease;
+    box-shadow: 0 4px 16px rgba(40, 0, 255, 0.2);
+}
+/* games */
+
+/* benefits */
+.benefit .card {
+    height: 200px; 
+}
+
+.benefit img {
+    height: 200px;
+}
+/* benefits */

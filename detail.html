@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tokin | TopUp Game EASY!</title>
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- my bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
+    <!-- my bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><b></b>
+                <a class="navbar-brand" href="./index.html"><b>Tokin&reg</b>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link" href="./game.html">Game</a>
+                        <a class="nav-link" href="./about.html">About</a>
+                        <div class="vr me-3"></div>
+                        <a class="nav-link" href="./transaction.html">transaction</a>
+
+                        <!-- trigger offcanvas -->
+                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">Profile</button>
+                    </div>
+                </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Hello, Username</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="text-group">
+                <h6>Email Address</h6>
+                <h4>example@gmail.com</h4>
+            </div>
+            <div class="text-group">
+                <h6>Whatsapp Number</h6>
+                <h4>0812345678</h4>
+            </div>
+
+
+            <!-- button trigger pop-up sweetalert -->
+            <div class="text-group">
+                <button id="logoutButton" class="btn btn-danger w-100 mt-5">Log Out</button>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas -->
+
+    <!-- detail -->
+    <div class="detail mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Mobile Legends</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-header"> how to top up</div>
+                        <div class="card-body">
+                            <ol>
+                                <li>input your User ID and Zone ID, example: 1234567 (1234)</li>
+                                <li>Choose the desired Diamond amount</li>
+                                <li>Upload Proof & Complete payment</li>
+                                <li>Diamonds will be instantly added to your Game account</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <form action="./success.html">
+                        <!-- form detail akun -->
+                        <div class="row">
+                            <div class="card mb-3">
+                                <div class="card-header">Account details</div>
+
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <span class="input-group-text">User ID & Zone ID</span>
+                                        <input type="text" aria-label="User ID" class="form-control"
+                                            placeholder="Input User ID">
+                                        <input type="text" aria-label="Zone ID" class="form-control"
+                                            placeholder="Input Zone ID">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- form opsi top up -->
+                        <div class="row">
+                            <div class="card mb-3">
+                                <div class="card-header">Choose Top Up Amount</div>
+
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <input type="radio" class="btn-check" name="options-base" id="option1"
+                                                autocomplete="off" checked>
+                                            <label for="option1" class="btn w-100">💎 50 Diamonds <br>
+                                                <small>Rp.15.000</small></label>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <input type="radio" class="btn-check" name="options-base" id="option2"
+                                                autocomplete="off" checked>
+                                            <label for="option2" class="btn w-100">💎 100 Diamonds <br>
+                                                <small>Rp.50.000</small></label>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <input type="radio" class="btn-check" name="options-base" id="option3"
+                                                autocomplete="off" checked>
+                                            <label for="option3" class="btn w-100">💎 500 Diamonds <br>
+                                                <small>Rp.75.000</small></label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- form pembayaran -->
+                        <div class="row">
+                            <div class="card mb-3">
+                                <div class="card-header">payment</div>
+
+                                <div class="card-body">
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <h5>payment smmary</h5>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>item</th>
+                                                        <th>price</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td>50 diamonds</td>
+                                                        <td>Rp. 15.000</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>admin fee</td>
+                                                        <td>Rp. 1.500</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>total</td>
+                                                        <td>Rp. 16.500</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <h5>payment method</h5>
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row d-flex align-items-center">
+                                                        <div class="col-lg-4">
+                                                            <img src="./asset/ic-bca.png" alt="" width="70%">
+                                                        </div>
+
+                                                        <div class="col-lg-4">
+                                                            <h6>bank transfer to BCA <small>a.n tokin sentosa</small>
+                                                            </h6>
+                                                            <h5>123456789</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <h5>upload proof payment</h5>
+                                            <input type="file" class="form-control" id="proofpayment" accept="image/*">
+                                            <small class="form-text text-muted">Upload a clear iamge of your paymennt
+                                                proof</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Confirm Payment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- detail -->
+
+</body>
+
+</html>

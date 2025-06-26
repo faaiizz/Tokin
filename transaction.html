@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tokin | TopUp Game EASY!</title>
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- my bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
+    <!-- my bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./home.html"><b></b>
+                <a class="navbar-brand" href="./home.html"><b>Tokin&reg</b>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="./home.html">Home</a>
+                        <a class="nav-link" href="./game.html">Game</a>
+                        <a class="nav-link" href="./about.html">About</a>
+                        <div class="vr me-3"></div>
+                        <a class="nav-link" href="./transaction.html">transaction</a>
+
+                        <!-- trigger offcanvas -->
+                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">Profile</button>
+                    </div>
+                </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Hello, Username</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="text-group">
+                <h6>Email Address</h6>
+                <h4>example@gmail.com</h4>
+            </div>
+            <div class="text-group">
+                <h6>Whatsapp Number</h6>
+                <h4>0812345678</h4>
+            </div>
+
+
+            <!-- button trigger pop-up sweetalert -->
+            <div class="text-group">
+                <button id="logoutButton" class="btn btn-danger w-100 mt-5">Log Out</button>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas -->
+
+    <!-- transaction -->
+    <div class="transaction mt-5">
+        <div class="container">
+            <h1 class="mt-5">transaction history</h1>
+            <div class="row">
+                <div class="col">
+                    <!-- tabel -->
+                    <table class="table table-striped mt-3">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Transaction Time</th>
+                                <th>Amount</th>
+                                <th>Price</th>
+                                <th>status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>2025-06-26</td>
+                                <td>100</td>
+                                <td>Rp 75.000</td>
+                                <td><span class="trxt-align text-warning">On Process</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>02</td>
+                                <td>2025-06-28</td>
+                                <td>100</td>
+                                <td>Rp 75.000</td>
+                                <td><span class="trxt-align text-success">On Process</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <!-- tabel -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- transaction -->
+</body>
+
+</html>
